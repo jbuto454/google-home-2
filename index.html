@@ -2,6 +2,10 @@
 <head>
 <style>
 
+    .header {
+        height: 40px;
+        width: 100%;
+    }
 
     li {
         font-size: 15px;
@@ -15,49 +19,72 @@
         padding: 0;
     }
 
+    .Nav_bar_2 {
+        Float: right;
+        margin-top: -10px;
+    }
+
     .search {
-        margin: 0 auto;
-        width: 400px;
+        width: 550px;
         border-radius: 25px;
+        border-color: rgb(247, 242, 242);
+        height: 45px;
     }
 
     .container {
         display: flex;
         justify-content: center;
         margin-top: 30px;
+        width: 100%
+        height: auto;
     }
 
     .container_2 {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        height: 40px;
+        width: 100%
+        height: calc(100% - 237px);
+    }
+
+    .button {
+        width: 100px;
+        height: 35px;
+        margin: 0 auto;
     }
 
 </style>
 </head>
 
-<ul>
+<ul class="header">
 
     <li> About </li>
     <li> Store </li>
+    <li class="Nav_bar_2">Gmail</li>
+    <li Class="Nav_bar_2">Images</li>
+    <img src="3941315.svg" alt="see more apps">
 
 </ul>
 
 
 <body>
     <main>
-    
-    <div class="container">
-        <img src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="the google logo">
-    </div>
-
-    <div>
-        <form class="container_2">
-            <input type="text" class="search" placeholder="search">
-        </form>
-    </div>
-
+  
+  
+      <div class="container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="the google logo">
+      </div>
+  
+      <form class="container">
+        <input type="text" class="search" placeholder="search">
+      </form>
+  
+  
+      <div class="container_2">
+          <input class="button" type="button">
+          <input class="button" type="button">
+      </div>
+  
+  
     </main>
-</body>
-</html>
+  </body>
+  
+  </html>
+  
